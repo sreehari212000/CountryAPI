@@ -1,0 +1,21 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em ;
+    background-color: #2b3945;
+}
+.navbar > h3{
+    background-color: #2b3945;
+}
+.moon{
+    background-color: #2b3945;
+}
+.nav-right{
+    display: flex;
+    background-color: #2b3945;
+}
+.mode {
+    margin-left: 0.8em;
+    background-color: #2b3945;
+}

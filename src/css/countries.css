@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('https://fonts.google.com/specimen/Nunito+Sans');
+}
+
+.countries{
+    color: #ffffff;
+    font-family: 'Nunito Sans';
+    margin: 0 2em;
+    max-width: 1440px;
+    height: 100%;
+
+}
+.countries-btm{
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+.error{
+    height: 100vh;
+    text-align: center;
+}
+
+@media (min-width: 800px) {
+    .countries{
+        margin: 0 auto;
+    }
+}

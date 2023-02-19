@@ -1,0 +1,29 @@
+.searchbar{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.4em 2em;
+    margin-top: 2.5em;
+    background-color: #2b3945;
+    border-radius: 5px;
+}
+.searchbar > input{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    color: white;
+    letter-spacing: 0.1em;
+    outline: none;
+    font-size: 1.1rem;
+    padding: 0.7em 0.5em;
+}   
+.search{
+    background-color: #2b3945;
+}
+@media (min-width: 750px) {
+    .searchbar{
+        width: 700px;
+        margin: 2.5em 1.5em;
+    }
+}

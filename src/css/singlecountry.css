@@ -1,0 +1,45 @@
+.singlecountry{
+    width: 90%;
+    margin: 40px auto;
+    font-size: 14px;
+}
+.btn {
+    padding: 10px;
+    background-color: #2b3945;
+    color: white;
+    border-radius: 5px;
+}
+.single-flag{
+    margin-bottom: 35px;
+    width: fit-content;
+}
+.singlecountry-details{
+    margin-top: 40px;
+}
+
+.detail-container > h2{
+    margin-bottom: 15px;
+}
+.detail-left{
+    margin-bottom: 15px;
+}
+.det > p{
+    margin-bottom: 5px;
+}
+.det > p > span{
+    color: white;
+}
+.subdetails{
+    width: 112%;
+}
+@media (min-width: 723px){
+    .singlecountry-details{
+        display: flex;
+        gap: 13%;
+        align-items: center;
+    }
+    .subdetails{
+        display: flex;
+        gap: 10%;
+    }
+}
