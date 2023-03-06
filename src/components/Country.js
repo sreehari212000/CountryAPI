@@ -1,7 +1,5 @@
 import { useNavigate } from "react-router-dom"
 import "../css/country.css"
-import { useContext } from 'react';
-import { AppContext } from '../context';
 function Country({name, flag, population, region, capital}){
     const navigate = useNavigate()
     return (

@@ -1,6 +1,5 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import './App.css';
-import Countries from "./components/Countries";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar"
 import SingleCountry from "./components/SingleCountry";

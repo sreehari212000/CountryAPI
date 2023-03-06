@@ -8,7 +8,6 @@ function SingleCountry(){
     const [country, setCountry] = useState(null)
     const navigate = useNavigate()
     useEffect(()=>{
-        // setLoading(true)
         fetch(`https://restcountries.com/v3.1/name/${countryName}`)
         .then((response)=>response.json())
         .then((data)=>{

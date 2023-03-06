@@ -1,6 +1,5 @@
 import '../css/countries.css'
 import Country from './Country';
-import data from "../data.json"
 import { useContext } from 'react';
 import { AppContext } from '../context';
 
