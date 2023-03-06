@@ -8,15 +8,16 @@ function SingleCountry(){
     const [country, setCountry] = useState(null)
     const navigate = useNavigate()
     useEffect(()=>{
-        setLoading(true)
+        // setLoading(true)
         fetch(`https://restcountries.com/v3.1/name/${countryName}`)
         .then((response)=>response.json())
         .then((data)=>{
-            console.log(data);
             setCountry(data)
             setLoading(false)
         }).catch((e)=>{
             setLoading(false)
+            alert(e)
+            navigate('/')
         })
     }, [countryName])
     
@@ -27,7 +28,7 @@ function SingleCountry(){
     }
     // if(country == null)return;  
 
-    const {name, flags, population, region, subregion, tld, capital, currencies, languages} = country[0]
+    const {name, flags, population, region, subregion, tld, capital, unMember, timezones, startOfWeek} = country[0]
     return(
         <div className="singlecountry">
             <button className="btn" onClick={()=>{navigate('/')}}>Back Home</button>
@@ -45,8 +46,9 @@ function SingleCountry(){
                         </div>
                         <div className="det detail-right">
                             <p>Top Level Domain: <span>{tld.join(',')}</span></p>
-                            <p>Currencies: <span>{}</span></p>
-                            <p>Languages: <span></span></p>
+                            <p>Time Zone: <span>{timezones[0]}</span></p>
+                            <p>UN Memeber: <span>{unMember ? "Yes" : 'No'}</span></p>
+                            <p>Start Of week: <span>{startOfWeek}</span></p>
                         </div>
                     </div>
                     
